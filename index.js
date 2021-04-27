@@ -34,6 +34,12 @@ const conn = mysql.createConnection({
   });
 
 // API fr authenticating an agent and retrieving agent id
+
+// API fr authenticating an agent and retrieving agent id
+// API fr authenticating an agent and retrieving agent id
+// API fr authenticating an agent and retrieving agent id
+// API fr authenticating an agent and retrieving agent id
+// API fr authenticating an agent and retrieving agent id
   app.post('/app/agent/auth',(req, res) => {
     let sql = "Select agent_id, password from agents where agent_id='"+ req.body.agent_id + "'";
     let query = conn.query(sql,(err, results) => {
